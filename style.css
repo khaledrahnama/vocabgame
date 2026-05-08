@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: #87ceeb;
+}
+
+#gameCanvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+#ui {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    color: white;
+}
+
+#ui h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px black;
+}
+
+#scoreBox {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#scoreText {
+    display: flex;
+    gap: 20px;
+}
+
+.scoreLabel {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.scoreLabel #incorrectScore {
+    color: #ff6b6b;
+}
+
+#genderFilter {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 12px 14px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#genderFilter label {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.gender-btn {
+    padding: 6px 12px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.gender-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.gender-btn.active {
+    background: #4CAF50;
+    border-color: #4CAF50;
+    font-weight: bold;
+}
+
+#wordBox {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 14px 18px;
+    border-radius: 10px;
+    min-width: 320px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#wordContent {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#wordText {
+    flex: 1;
+}

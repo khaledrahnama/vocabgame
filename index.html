@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Discovery Runner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="ui">
+        <h1>German Discovery Runner</h1>
+        
+        <div id="scoreBox">
+            <div id="scoreText">
+                <span class="scoreLabel">Correct: <span id="correctScore">0</span> 👍</span>
+                <span class="scoreLabel">Incorrect: <span id="incorrectScore">0</span> 👎</span>
+            </div>
+        </div>
+        
+        <div id="genderFilter">
+            <label>Choose Gender:</label>
+            <button id="genderAll" class="gender-btn active">All</button>
+            <button id="genderDer" class="gender-btn">Masculine (der)</button>
+            <button id="genderDie" class="gender-btn">Feminine (die)</button>
+            <button id="genderDas" class="gender-btn">Neutral (das)</button>
+        </div>
+
+        <div id="wordBox">
+            <div id="wordContent">
+                <div id="wordText">Touch objects to learn German words</div>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
